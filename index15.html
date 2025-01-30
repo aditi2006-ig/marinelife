@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polygon Marine Life</title>
+
+    <!-- Inline CSS for Styling -->
+    <style>
+        /* General Styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #001f3f;
+            color: #ffffff;
+        }
+
+        /* Polygon Background Header */
+        .header {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            color: #ffffff;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        }
+
+        /* Background video styling */
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0; /* Ensure video is behind content */
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1; /* Keep content above the video */
+        }
+
+        .header h1, .header p {
+            color: #e0f7fa;
+            z-index: 1;
+        }
+
+        /* Polygonal Shapes */
+        .polygon {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.2);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            animation: float 6s infinite ease-in-out;
+        }
+
+        /* Randomly Positioned Polygons */
+        .polygon:nth-child(1) { top: 20%; left: 15%; }
+        .polygon:nth-child(2) { top: 60%; left: 25%; }
+        .polygon:nth-child(3) { top: 40%; left: 80%; }
+        .polygon:nth-child(4) { top: 70%; left: 60%; }
+        .polygon:nth-child(5) { top: 20%; left: 75%; }
+
+        /* Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 4em 0;
+            background: #013049;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            color: #80deea;
+        }
+
+        .gallery .images {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
+
+        .gallery .images img {
+            width: 200px;
+            height: 150;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .gallery .images img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Additional Content Section Styling */
+        .additional-content {
+            padding: 3em 1em;
+            background-color: #014f7f;
+            color: #e0f7fa;
+            text-align: center;
+        }
+
+        .additional-content h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        }
+
+        .additional-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+.conservation-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.conservation-image:hover {
+  transform: scale(1.1);
+}
+
+        /* Footer */
+        footer {
+            background-color: #00222e;
+            color: #b3e5fc;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Video Section (Updated) -->
+    <section class="header">
+        <!-- Background video -->
+    <video autoplay loop muted class="background-video">
+            <source src="https://videos.pexels.com/video-files/5608048/5608048-uhd_2560_1440_24fps.mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Content over the video -->
+        <div class="header-content">
+            <h1>Discover the Deep Blue</h1>
+            <p>Explore the fascinating world of marine life</p>
+        </div>
+    </section>
+
+
+
+    <!-- Gallery Section --><br><br><br>
+    <section class="gallery">
+        <h2>MARINE ANIMALS</h2>
+        <div class="images">
+            <a href="dolphin-info.html" target="_blank">
+                <img src="https://i.pinimg.com/736x/f3/46/3d/f3463d4b57249b61ac5d87eaff58231c.jpg" alt="Dolphin">
+            </a>
+            <a href="sea-turtle-info.html" target="_blank">
+                <img src="https://i.pinimg.com/736x/67/63/76/676376178168f53a0c7154a1c258ac8d.jpg" alt="Sea Turtle">
+            </a>
+            <a href="Seasnake-info.html" target="_blank">
+                <img src="https://i.pinimg.com/236x/53/6c/d8/536cd8b3dfd4b79b0f8b8201383b6221.jpg" alt="Sea Snake">
+            </a>
+            <a href="whale-info.html" target="_blank">
+                <img src="https://i.pinimg.com/564x/eb/3f/ce/eb3fce1b5457618d6b5419903f4230ac.jpg" alt="Whale">
+            </a>
+ <a href="Shark-info.html" target="_blank">
+                <img src="https://i.pinimg.com/736x/d7/f9/18/d7f9181f42dbfe273cc08bdfc00c5741.jpg"  alt="shark">
+            </a>
+        </div>
+<h3>"Great attention gets paid to rainforests because of the diversity of life there. Diversity in the oceans is even greater."<br>~Sylvia Earle, Oceanographer"</h3>
+    </section>
+ <!-- Gallery Section --><br><br><br>
+    <section class="gallery">
+        <h2>ENDANGERED SPECIES</h2>
+        <div class="images">
+            <a href="Hawksbillturtle.html" target="_blank">
+                <img src="https://i.pinimg.com/474x/4a/96/0d/4a960da682e4a4747a9d96cdedba60f2.jpg" alt="TURTLE">
+            </a>
+            <a href="Atlanticwhale.html" target="_blank">
+                <img src="https://i.pinimg.com/736x/c4/4c/65/c44c65ed5f1a4990017a956418298caf.jpg" alt="whale">
+            </a>
+            <a href="vanquita.html" target="_blank">
+                <img src="https://i.pinimg.com/736x/7f/58/f9/7f58f9ad19296f278d0b876c32b997e5.jpg" alt="vanquita">
+            </a>
+            <a href="penguin.html" target="_blank">
+                <img src="https://i.pinimg.com/originals/72/c0/90/72c090b71d499d56ca6d680b5b56dde7.jpg" alt="penguin">
+</a>
+<a href="whaleshark.html" target="_blank">
+                <img src="https://i.pinimg.com/474x/24/26/39/2426396ce539f1cdcf8f485a77473652.jpg" alt="whaleshark">
+            </a>
+<h3>“We all have a responsibility to protect endangered species, both for their sake and for the sake of our own future generations.”<br> ~Loretta Lynch, the former United States Attorney General.</h3>
+</div>
+ </section>
+  <!-- Gallery Section --><br><br><br>
+    <section class="gallery">
+        <h2>EXTINCT SPECIES</h2>
+        <div class="images">
+            <a href="baiji.html" target="_blank">
+                <img src="https://geographyandyou.com/media/2023/07/Final%20artical%202.jpg" alt="BaijiDolphin">
+            </a>
+            <a href="japanesesealion.html" target="_blank">
+                <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/331147007/large.jpg" alt="sealion">
+            </a>
+<a href="monkseal.html" target="_blank">
+                <img src="https://cdn.britannica.com/23/128423-050-F3364D52/Hawaiian-Laysan-monk-seal.jpg" alt="monkseal">
+            </a>
+
+            <a href="ammonities.html" target="_blank">
+                <img src="https://lh6.googleusercontent.com/proxy/cVz-4RdVUZZ9a6xmktON0mDFtE_33KFIXihpNmBZl51uT6BxGn-x5rmCe8jyPy1jkIxaznDf48Eh6WlSHKJqdcT1lMwHUkY_YBmaDQ" alt="ammmonities">
+            </a>
+            <a href="galapenguin.html" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHEtWQ4Qm9G4QIBqq8E5Qo6yJjE40smQJSMA&s" alt="penguin">
+</a>
+        </div>
+<h3>"Animals are, like us ,endangered species on an endangered planet,and<br> we are the ones who are endangering them ,it ,and ourselves.They are innocent sufferers in a hell of our making".<br>~ Jeffrey Moussaieff Masson,American author and outspoken vegan and animal rights activist. </h3>
+    </section>
+
+ <!-- Gallery Section --><br><br><br>
+    <section class="gallery">
+   <h2>MARINE PLANTS</h2>
+        <div class="images">
+            <a href="kelp forest-info.html" target="_blank">
+                <img src="https://i.pinimg.com/736x/4a/51/fa/4a51fad7205debccb3e6530be7b439bd.jpg" alt="kelp forest">
+            </a>
+            <a href="coralreef-info.html" target="_blank">
+                <img src="https://i.pinimg.com/736x/0e/19/ad/0e19ad88883ddd4e9100d779bf2da376.jpg" alt="coral reef">
+            </a>
+            <a href="rockyshore-info.html" target="_blank">
+                <img src="https://i.pinimg.com/736x/c8/d3/8d/c8d38df58018613a4b59db827609774d.jpg" alt="rocky shore">
+            </a>
+            <a href="seagrassbed-info.html" target="_blank">
+                <img src="https://i.pinimg.com/736x/47/a0/02/47a0028c574a05b2b497e93ed7991f42.jpg" alt="seagrass bed">
+            </a>
+ <a href="mangoveforest-info.html" target="_blank">
+                <img src="https://i.pinimg.com/736x/8e/0f/cb/8e0fcbc8792c4018a72489275f9d487e.jpg"  alt="mangrove forest">
+            </a>
+        </div>
+    </section>
+
+
+    <!-- New Content Section Below the Gallery -->
+    <section class="additional-content">
+      <right>  <h2> &#127800;Marine Life Conservation &#127800;
+</h2> 
+        <p>
+            Marine life is vital to the health of our oceans, which in turn play a crucial role in regulating the planet's climate, supporting biodiversity, and providing food and livelihood for millions of people. 
+            However, marine ecosystems are facing numerous challenges, including pollution, climate change, overfishing, and habitat destruction. Conservation efforts are critical in ensuring the survival of marine species and ecosystems for future generations.
+        </p>
+        <p>
+            By supporting marine conservation initiatives, reducing our carbon footprint, and spreading awareness about the importance of protecting our oceans, we can all contribute to preserving marine life. 
+            Join the global effort to safeguard the future of our planet’s marine ecosystems.
+        </p>
+   
+<div style="text-align: center; margin: 20px;">
+  <a href="conservation-document.html" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgPVKwzQosHZVKPNrHwmZfYFp65sdJZR3amg&s" alt="Marine Conservation" class="conservation-image">
+  </a>
+</div>
+   
+
+
+<!-- New Content Section Below the Gallery -->
+    <section class="additional-content">
+        <h2>WHY IT MATTERS&#127807;</h2>
+<img src="https://i.pinimg.com/736x/3f/17/87/3f178787800a4ed0ebb29efc603aa029.jpg" width="300px" height="500px">
+<right><img src="https://i.pinimg.com/736x/33/64/ea/3364eaca593fd4c81ad6c746e96ec689.jpg" width="300px" height="500px"></right>
+<left><img src="https://i.pinimg.com/736x/e8/26/fd/e826fd3667bd07f011d07ae98e28e998.jpg" width="300px" height="500px"></left>
+<h3> When oceans thrive, the planet regains its natural strength and flourishes</h3>
+        <p>
+Healthy oceans and the marine species living in them provide natural at-scale solutions to climate adaptation and resilience—and they absorb vast amounts of carbon dioxide. Oceans fuel the water cycles that produce rain and freshwater and create oxygen. And oceans are foundational to spectacular ecosystems and biodiversity, including treasured marine wildlife such as whales, sharks, polar bears, and turtles.  
+        </p>
+    </section>
+
+<!-- New Content Section Below the Gallery -->
+<section class="additional-content">
+    <center><h2>Our Mission</h2></center>
+   <center> <p>We, Aditi and Neha, created this Marine Life Encyclopedia with a shared passion for spreading awareness and knowledge about the diverse and fascinating creatures of the ocean.<br> Through this project, we aim to educate people<br> on the importance of marine life conservation and inspire others to take action in preserving our oceans and their inhabitants.</p>
+    <p>Working together, we are committed to helping protect<br> marine life and ensuring that future generations can enjoy and learn about these incredible creatures.</p></center>
+  <center>  <p>Assisted by: Shikha dubey and Muskan Jha</p></center>
+  </section>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Marine Life Exploration
+<p>We are a group of four passionate students from PGGCG-42 College,Chandigarh,currently pursuing our Bachelor of Computer Applications(BCA).This website is the result of our dedication and teamwork,showcasting our love for creativity and web development.Created with passion,this project reflects our collaborative effort to make something beautiful and informative.</p>
+<li>ADITI  (241564)
+<li>NEHA (241556)
+<li>SHIKHA DUBEY (241529)
+<li>MUSKAN JHA (241531)
+   
+    </footer>
+
+    <!-- Inline JavaScript for Floating Polygons -->
+    <script>
+        // Randomly move the polygons to make the background dynamic
+        const polygons = document.querySelectorAll('.polygon');
+        polygons.forEach(polygon => {
+            setInterval(() => {
+                polygon.style.top = Math.random() * 100 + '%';
+                polygon.style.left = Math.random() * 100 + '%';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
