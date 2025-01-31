@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kelp Forests</title>
+
+<style>
+    /* Ensure the page scales properly on all devices */
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Flexible layout and images */
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Make text readable on smaller screens */
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Responsive Design for smaller screens */
+    @media (max-width: 768px) {
+        body {
+            font-size: 14px;
+        }
+
+        header, footer {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 10px;
+        }
+
+        img {
+            border-radius: 5px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        body {
+            font-size: 12px;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+
+
+  <style>
+
+    /* Page styling */
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, sans-serif;
+
+      background-image: url('https://images.pexels.com/photos/13010769/pexels-photo-13010769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace with a kelp forest image URL */
+
+      background-size: cover;
+
+      background-attachment: fixed;
+
+      background-position: center;
+
+      color: #fff;
+
+    }
+
+
+
+    .content {
+
+      display: flex; /* Use flexbox to align content side by side */
+
+      max-width: 1200px;
+
+      margin: 50px auto;
+
+      padding: 20px;
+
+      background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+
+      border-radius: 10px;
+
+      line-height: 1.8;
+
+    }
+
+
+
+    h1 {
+
+      font-size: 2.5em;
+
+      text-align: center;
+
+      margin-bottom: 20px;
+
+      color: #ffcc00; /* Golden text for title */
+
+      width: 100%;
+
+    }
+
+
+
+    .text {
+
+      flex: 1; /* Allow the text to take up available space */
+
+      padding-right: 20px; /* Space between text and video */
+
+    }
+
+
+
+    p {
+
+      font-size: 1.2em;
+
+      text-align: justify;
+
+    }
+
+.video-container {
+
+  flex: 0 0 50%; /* The video will take up 45% of the width */
+
+  margin-top: 150px; /* Add 30px of space above the video */
+
+margin-left:50px;
+
+}
+
+
+
+    }
+
+
+
+    video {
+
+      width: 100%; /* Make the video fill its container */
+
+      border-radius: 10px;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <div class="content">
+
+    <div class="text">
+
+      <h1>Coral Reef </h1>
+
+      <p>Coral reefs are diverse underwater ecosystems built by colonies of tiny marine animals called corals, which secrete calcium carbonate to form hard, rocky structures. These reefs are often referred to as the "rainforests of the sea" due to their incredible biodiversity, supporting thousands of species of fish, invertebrates, and marine plants. Coral reefs thrive in warm, shallow waters and are vital for coastal protection, as they buffer against waves, storms, and erosion. They also provide critical habitats and resources for both marine and human life. However, coral reefs are under threat from climate change, ocean acidification, pollution, and overfishing, making their conservation essential for marine health.
+
+           </p>
+
+    </div>
+
+
+
+    <!-- Video on the right side -->
+
+ <div class="video-container">
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZiULxLLP32s?si=Mm3MQwzmqe-BySNX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>

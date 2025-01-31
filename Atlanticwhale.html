@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawksbill Turtle</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #003f7f, #000f2c);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Container Layout */
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      padding: 0 5%;
+    }
+
+    /* Left Section */
+    .left-section {
+      max-width: 45%;
+    }
+
+    .left-section h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .left-section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin: 20px 0;
+    }
+
+    .left-section span {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: #d1e8f2;
+    }
+
+    /* Right Section (Video Section) */
+    .right-section {
+      max-width: 50%;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .right-section iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* New Section Styles */
+    .section {
+      padding: 20px 5%;
+      margin: 20px 0;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #d1e8f2;
+    }
+
+    /* Gallery Styles */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .modal .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Ocean Waves Design */
+    .wave {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 43% 57% 70% 30% / 60% 30% 70% 40%;
+      animation: wave-animation 8s infinite ease-in-out;
+    }
+
+    /* Wave Positions */
+    .wave.top-left {
+      top: -50px;
+      left: -50px;
+    }
+
+    .wave.top-right {
+      top: -50px;
+      right: -50px;
+    }
+
+    .wave.bottom-left {
+      bottom: -50px;
+      left: -50px;
+    }
+
+    .wave.bottom-right {
+      bottom: -50px;
+      right: -50px;
+    }
+
+    /* Wave Animation */
+    @keyframes wave-animation {
+      0%, 100% {
+        transform: scale(1) rotate(0deg);
+      }
+      50% {
+        transform: scale(1.2) rotate(15deg);
+      }
+    }
+
+    /* Media Query for Smaller Screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right-section iframe {
+        height: 200px;
+      }
+
+      .wave {
+        width: 150px;
+        height: 150px;
+      }
+
+      .gallery img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    /* Map Container */
+    .map-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Ocean Waves -->
+  <div class="wave top-left"></div>
+  <div class="wave top-right"></div>
+  <div class="wave bottom-left"></div>
+  <div class="wave bottom-right"></div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="left-section">
+      <h1>NORTH ATLANTIC RIGHT WHALE</h1><br><br><br>
+     <p>The North Atlantic right whale (Eubalaena glacialis) is a critically endangered marine mammal native to the North Atlantic Ocean, known for its distinctive broad back and lack of dorsal fin. Once abundant, this species has faced drastic population declines due to historical whaling practices and continues to be threatened by ship strikes and entanglement in fishing gear. With an estimated population of fewer than 350 individuals, conservation efforts are crucial to prevent their extinction and ensure the survival of this iconic species, which plays an important role in marine ecosystems.</p>
+    </div>
+    <div class="right-section">
+      <img src="https://img.freepik.com/premium-photo/great-humpback-whale-sinking-bottom-ocean_124507-30750.jpg">
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="section">
+    <h2>ABOUT NORTH ATLANTIC RIGHT WHALE</h2>
+    <p>
+   The North Atlantic right whale (Eubalaena glacialis) is one of the most endangered whale species, primarily found along the eastern coast of North America. Known for their slow swimming and distinctive callosities on their heads, these whales can reach lengths of up to 55 feet and weigh up to 70 tons. Historically, they were targeted by whalers for their blubber and baleen, leading to severe population declines. Today, their greatest threats include ship strikes, entanglement in fishing gear, and habitat degradation. Conservation efforts focus on reducing human impacts, such as implementing shipping lane adjustments and promoting safer fishing practices, in hopes of increasing the population and protecting this vital species in marine ecosystems.
+    </p>
+  </div>
+  <!-- Info Button -->
+<center><button class="btn-info">SCIENTIFIC NAME:Eubalaena</button></center><br><br>
+<CENTER><button class="btn-info">ENDANGERED SPECIES</button></CENTER>
+
+<style>
+  /* Info Button Styles */
+  .btn-info {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Info color */
+    color: #fff; /* Text color */
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  /* Hover Effect */
+  .btn-info:hover {
+    background-color: #2980b9; /* Darker shade of blue */
+    transform: scale(1.05);
+  }
+</style>
+
+  <!-- Gallery Section -->
+  <div class="section">
+    <center><h2>GALLERY</h2></center>
+    <div class="gallery">
+      <img src="https://www.worldlifeexpectancy.com/images/a/w/b/eubalaena-glacialis/eubalaena-glacialis.webp" alt="Image 1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv6DoerxTBWf24heHygByIqF5bJLaEryLGYw&s" alt="Image 2">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcAFwpq38RF5PuPWbA25xHbN-fkw93u1VhRw&s" alt="Image 3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzM1tKoxPKKb2_Ey24N0SjhLUWOMw4TxIZQ&s" alt="Image 4">
+    </div>
+  </div>
+
+  <!-- Where Hawksbill Turtles Are Found Section -->
+  <div class="section">
+    <h2>Where North Atlantic Right Whale Are Found</h2>
+    <p>
+     It is now mostly found along the Atlantic coast of North America, Two other species of right whales exist: the North Pacific right whale, which is found in the North Pacific Ocean, and the Southern right whale, which is found in the southern hemisphere.
+    </p>
+    <div class="map-container">
+      <img src="https://i0.wp.com/hillnotes.ca/wp-content/uploads/2018/04/NorthAtlanticRightWhale_Map_ENG.jpg?resize=768%2C579&ssl=1" alt="Hawksbill Turtle Habitat Map" style="width: 70%; margin-top: 20px;">
+    </div>
+    <p><strong>Did you know?</strong> North Atlantic right whales can live up to 70 years. Researchers use their ear wax to determine their age after they have died. </p>
+  </div>
+
+</body>
+</html>

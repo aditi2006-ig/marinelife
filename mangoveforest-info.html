@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelp Forests</title>
+  <style>
+    /* Page styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1618288389681-f135edea12db?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with a kelp forest image URL */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+    }
+
+    .content {
+      display: flex; /* Use flexbox to align content side by side */
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+      border-radius: 10px;
+      line-height: 1.8;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffcc00; /* Golden text for title */
+      width: 100%;
+    }
+
+    .text {
+      flex: 1; /* Allow the text to take up available space */
+      padding-right: 20px; /* Space between text and video */
+    }
+
+    p {
+      font-size: 1.2em;
+      text-align: justify;
+    }
+.video-container {
+  flex: 0 0 50%; /* The video will take up 45% of the width */
+  margin-top: 150px; /* Add 30px of space above the video */
+margin-left:50px;
+}
+
+    }
+
+    video {
+      width: 100%; /* Make the video fill its container */
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <div class="text">
+      <h1>Mangrove Forest</h1>
+      <p>Mangrove forests are coastal ecosystems found in tropical and subtropical regions, characterized by salt-tolerant trees and shrubs that thrive in brackish water where freshwater meets the ocean. These unique forests are well adapted to the harsh, waterlogged conditions with specialized root systems like aerial roots and pneumatophores that help them breathe in oxygen-poor soils. Mangroves provide crucial ecological services, acting as natural barriers against coastal erosion, storm surges, and rising sea levels while fostering rich biodiversity.
+              </p>
+     
+    <!-- Video on the right side -->
+ <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cwTZhyA57mA?si=f7t4KdSOfa_Jtxc3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+  </div>
+
+</body>
+</html>

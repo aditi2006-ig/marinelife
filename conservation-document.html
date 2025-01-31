@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Life Conservation</title>
+    <style>
+        /* Resetting styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and general styles */
+
+/* General styles for mobile responsiveness */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0077b6; /* Blue theme */
+    color: #fff; /* White text */
+    line-height: 1.6;
+    background-image: url("https://images.pexels.com/photos/889929/pexels-photo-889929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Background image */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Container that wraps content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #005f8a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Navigation for small screens */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffd700; /* Gold color for contrast */
+}
+
+/* Intro Section */
+#intro {
+    background-color: #003e5c;
+    text-align: center;
+}
+
+#intro .intro-img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* General adjustments for mobile */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Button Adjustments */
+    #how button {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    /* Make Images Fit */
+    .intro-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust box sizes for causes and measures */
+    .cause-item, .measure-item {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .cause-item h3, .measure-item h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Footer text */
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile portrait view */
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    section {
+        padding: 15px 0;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .cause-item, .measure-item {
+        padding: 12px;
+        margin: 5px 0;
+    }
+
+    /* Make Buttons Larger */
+    #how button {
+        padding: 15px 40px;
+    }
+}
+
+
+
+       
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #0077b6; /* Blue theme */
+            color: #fff; /* White text */
+            line-height: 1.6;
+            background-image: url("https://images.pexels.com/photos/889929/pexels-photo-889929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Added background image */
+            background-size: cover; /* Ensure the image covers the screen */
+            background-position: center center; /* Center the image */
+            background-attachment: fixed; /* Keep the image fixed while scrolling */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #005f8a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Section styles */
+        section {
+            padding: 40px 0;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ffd700; /* Gold color for contrast */
+        }
+
+        /* Intro Section */
+        #intro {
+            background-color: #003e5c;
+            text-align: center;
+        }
+
+        #intro .intro-img {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        /* Causes and Measures Box Style */
+        .causes-section, .measures-section {
+            background-color: #003e5c;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        .cause-item, .measure-item {
+            background-color: #004e70;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cause-item h3, .measure-item h3 {
+            font-size: 1.5rem;
+            color: #ffd700;
+        }
+
+        .cause-item p, .measure-item p {
+            color: #e0e0e0;
+        }
+
+        /* Video Section */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 250px; /* Adjust max-width to make the video larger */
+            max-height: 1000px; /* Set a max-height for the video */
+            border: none;
+        }
+
+        /* How You Can Help Section */
+        #how {
+            background-color: #005f8a;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        #how button {
+            background-color: #ffd700;
+            color: #0077b6;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        #how button:hover {
+            background-color: #003e5c;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003e5c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            .intro-img {
+                max-width: 100%;
+            }
+
+            section {
+                padding: 20px 0;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .video-container iframe {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Marine Life Conservation</h1>
+            <nav>
+                <ul>
+                    <li><a href="#causes">Causes</a></li>
+                    <li><a href="#measures">Measures</a></li>
+                    <li><a href="#how">How You Can Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <h2>Why is Marine Life Important?</h2>
+            <p>Marine life supports the health of ecosystems and provides food and livelihoods for billions of people. It’s crucial to protect the oceans, ensuring the survival of marine species and maintaining balance in the environment.
+Marine life is essential for maintaining ecosystem balance, producing oxygen, providing food, and supporting economic activities like fishing and tourism. Oceans also regulate the climate by absorbing carbon dioxide. Protecting marine life is crucial for sustaining these vital functions and ensuring the health of our planet.</p>
+            <img src="https://images.pexels.com/photos/3410956/pexels-photo-3410956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width=50px height=350px alt="Marine Life" class="intro-img">
+        </div>
+    </section>
+
+    <section id="causes" class="causes-section">
+        <div class="container">
+            <h2>Causes of Marine Life Destruction</h2>
+            <div class="cause-item">
+                <h3>Pollution</h3>
+                <p>Millions of tons of plastic waste end up in the ocean each year, harming marine life. Animals such as sea turtles, whales, and seabirds can mistake plastic for food, leading to ingestion and often death. Additionally, plastic debris entangles marine creatures, causing injuries or death</P>
+<p><b>Oil Spills</b><br>
+Impact: Oil spills are devastating for marine life. Oil coats the fur and feathers of animals, impairing their ability to regulate temperature or float. Marine animals like fish, seals, and birds often die from exposure to oil, which poisons the water and disrupts ecosystems.</P>
+
+<p><b>Chemical Pollution</b><br>
+Impact: Pesticides, fertilizers, heavy metals, and other chemicals often enter the ocean through agricultural runoff, industrial waste, and untreated sewage. These chemicals can be toxic to marine life, causing disease, reproductive failure, and death.</p>
+<p><b>Marine Debris</b><br>
+Impact: Non-biodegradable debris like discarded fishing gear, plastic bottles, and other waste can physically harm marine life by entangling animals or causing injuries.
+
+</p>
+            </div>
+            <div class="cause-item">
+                <h3>Overfishing</h3>
+                <p>Overfishing disrupts ecosystems and causes the depletion of fish stocks.</p>
+
+<p><b>Depletion of Fish Stocks:</b> Overfishing reduces the population of certain species, leading to the collapse of local fish populations and making it harder for marine ecosystems to function properly.</p>
+<p><b>Disruption of Marine Food Chains:</b> When one species of fish is overexploited, it can affect other species that rely on it for food. For example, the depletion of smaller fish species can affect larger predator species, such as sharks and whales.</p>
+<p><b>Loss of Biodiversity:</b> As specific fish species become overfished, other species that rely on them either for food or ecological balance suffer, leading to a reduction in biodiversity.</p>
+<p><b>Destruction of Habitats:</b> Certain fishing methods, like bottom trawling, damage the seafloor and destroy vital habitats for marine life, such as coral reefs and seagrass beds.</p>
+<p><b>Economic Impact:</b> Overfishing can hurt local economies that depend on fishing for livelihood. The collapse of fish stocks can lead to job loss and food insecurity for communities that rely on fish as a primary protein source.</p>
+            </div>
+            <div class="cause-item">
+                <h3>Climate Change</h3>
+                <p>Rising temperatures and ocean acidification threaten marine species' survival.</p>
+<p><b>Rising Ocean Temperatures:</b>
+
+<b>Coral Bleaching:</b> Warmer waters stress coral reefs, causing coral bleaching, where corals expel the symbiotic algae (zooxanthellae) that they rely on for nutrition. Without these algae, corals turn white and can die, leading to the collapse of entire reef ecosystems that support a vast array of marine species.</p>
+<p><b>Shifts in Species Distribution: </b>Many marine species, such as fish and marine mammals, are sensitive to temperature changes. Rising temperatures force species to migrate to cooler waters, disrupting ecosystems and local fishing industries.</p>
+<p><b>Decreased Oxygen Levels:</b> Higher temperatures reduce the amount of dissolved oxygen in the water, which is essential for the survival of marine species like fish and invertebrates.</p>
+<p><b>Ocean Acidification</b>
+Impact on Shellfish and Coral Reefs: Increased carbon dioxide (CO2) in the atmosphere is absorbed by the oceans, leading to a decrease in the pH of the water (ocean acidification). This harms marine organisms that rely on calcium carbonate to build their shells and skeletons, such as corals, oysters, and mussels.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="measures" class="measures-section">
+        <div class="container">
+            <h2>Measures to Protect Marine Life</h2>
+            <div class="measure-item">
+                <h3>Reduce Plastic Use</h3>
+                <p>Minimize single-use plastics and support recycling efforts to prevent ocean pollution.</p>
+<p><b>Ban Single-Use Plastics:</b> Many governments and regions are implementing bans or restrictions on single-use plastics, such as bags, bottles, and straws. Reducing the use of disposable plastics significantly decreases the amount of plastic waste that ends up in oceans.</p>
+<p><b>Increase Recycling:</b> Encouraging the recycling of plastic and other materials helps to reduce waste. Improving recycling infrastructure and public awareness can ensure that fewer plastics enter the marine environment.</p>
+<p><b>Support Biodegradable Alternatives: </b>Encourage businesses and consumers to use biodegradable alternatives to plastic, such as paper, glass, or plant-based materials.</p>
+<p><b>Cleanup Efforts:</b> Participate in or support beach cleanups and efforts to remove plastics and other waste from marine environments.</p>
+            </div>
+            <div class="measure-item">
+                <h3>Support Sustainable Fisheries</h3>
+                <p>Choose sustainably sourced seafood and advocate for responsible fishing practices.</p>
+<p><b>Choose Sustainable Seafood:</b> Consumers can play an important role by selecting seafood that has been sustainably sourced, such as those certified by organizations like the Marine Stewardship Council (MSC) or Aquaculture Stewardship Council (ASC).</p>
+<p><b>Implement and Enforce Sustainable Fishing Practices:</b> Governments and international organizations should enforce regulations that set limits on catch sizes, protect fish breeding areas, and reduce bycatch (the capture of unintended species).</p>
+<p><b>Promote Aquaculture:</b> Sustainable aquaculture (fish farming) can help meet the demand for seafood while reducing pressure on wild fish populations. However, it's essential to ensure that aquaculture operations don't harm the environment or local ecosystems.</p>
+<p><b>Protect Marine Protected Areas (MPAs):</b> Establish and enforce MPAs where fishing and other activities are restricted or prohibited to allow marine ecosystems to recover and thrive.
+</p>
+            </div>
+            <div class="measure-item">
+                <h3>Reduce Carbon Emissions</h3>
+                <p>Work to reduce greenhouse gas emissions to help mitigate the effects of climate change.</p>
+<p><b>Ocean Warming:</b> The burning of fossil fuels releases carbon dioxide (CO2) into the atmosphere, which traps heat and warms the planet. The oceans absorb around 90% of this excess heat, leading to rising sea temperatures. This can cause coral bleaching, disrupt migration patterns, and alter species' habitats, threatening marine biodiversity.</p>
+<p><b>Ocean Acidification: </b>Increased levels of CO2 in the atmosphere are also absorbed by the oceans, resulting in ocean acidification. The reduced pH makes it more difficult for marine organisms like corals, shellfish, and plankton to form their calcium carbonate shells and skeletons. This has detrimental effects on the entire marine food chain.</p>
+<p><b>Loss of Habitats:</b> Warmer waters can lead to the loss of vital marine habitats such as coral reefs, seagrass beds, and mangroves, which are home to countless marine species. These ecosystems also serve as carbon sinks, further emphasizing the need to protect them.</p>
+            </div>
+
+    </section>
+
+    
+    <section id="how" class="how-section">
+        <div class="container">
+            <h2>How You Can Help</h2>
+            <p>There are many ways you can help conserve marine life, from making eco-conscious choices to supporting organizations focused on ocean health.</p>
+<h3>Educate and Raise Awareness</h3>
+                <p>Work to reduce greenhouse gas emissions to help mitigate the effects of climate change.</p>
+<p><b>Public Awareness Campaigns:</b> Governments, NGOs, and environmental organizations should run awareness campaigns about the importance of marine conservation, the effects of pollution, and how individuals can make a difference.</p>
+<p><b>Support Marine Conservation Organizations:</b> Donating to or volunteering with organizations that are dedicated to marine life protection can amplify efforts to save oceans and the creatures that live in them.</p>
+<p><b>Environmental Education:</b> Including marine conservation in school curricula and teaching people about sustainable practices can help instill a sense of responsibility towards marine ecosystems.
+</p>
+            <button id="helpBtn">Learn More</button>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="container">
+            <p>&copy; 2025 Marine Life Conservation</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for button interaction
+        document.getElementById('helpBtn').addEventListener('click', function() {
+            alert('Thank you for your interest! Together we can protect marine life.For more information, visit this link: https://pcfml.org.au')
+        });
+    </script>
+</body>
+</html>

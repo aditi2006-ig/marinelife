@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawksbill Turtle</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #003f7f, #000f2c);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Container Layout */
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      padding: 0 5%;
+    }
+
+    /* Left Section */
+    .left-section {
+      max-width: 45%;
+    }
+
+    .left-section h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .left-section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin: 20px 0;
+    }
+
+    .left-section span {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: #d1e8f2;
+    }
+
+    /* Right Section (Video Section) */
+    .right-section {
+      max-width: 70%;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .right-section iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* New Section Styles */
+    .section {
+      padding: 20px 5%;
+      margin: 20px 0;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #d1e8f2;
+    }
+
+    /* Gallery Styles */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .modal .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Ocean Waves Design */
+    .wave {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 43% 57% 70% 30% / 60% 30% 70% 40%;
+      animation: wave-animation 8s infinite ease-in-out;
+    }
+
+    /* Wave Positions */
+    .wave.top-left {
+      top: -50px;
+      left: -50px;
+    }
+
+    .wave.top-right {
+      top: -50px;
+      right: -50px;
+    }
+
+    .wave.bottom-left {
+      bottom: -50px;
+      left: -50px;
+    }
+
+    .wave.bottom-right {
+      bottom: -50px;
+      right: -50px;
+    }
+
+    /* Wave Animation */
+    @keyframes wave-animation {
+      0%, 100% {
+        transform: scale(1) rotate(0deg);
+      }
+      50% {
+        transform: scale(1.2) rotate(15deg);
+      }
+    }
+
+    /* Media Query for Smaller Screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right-section iframe {
+        height: 200px;
+      }
+
+      .wave {
+        width: 150px;
+        height: 150px;
+      }
+
+      .gallery img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    /* Map Container */
+    .map-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Ocean Waves -->
+  <div class="wave top-left"></div>
+  <div class="wave top-right"></div>
+  <div class="wave bottom-left"></div>
+  <div class="wave bottom-right"></div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="left-section">
+      <h1>GALAPAGOS PENGUIN</h1><br><br><br>
+     <p>The Galapagos penguin is one of the smallest penguins in the world and is endemic to the Galapagos Islands. It is the most northerly occurring penguin species, nesting entirely in the tropics, with some colonies living on the northern tip of Isabela in the Northern Hemisphere. They are closely related to the African, Humboldt and Magellanic penguins, all of which are burrow-dwelling. As there is no soft peat in which to burrow on the Galapagos Islands, Galapagos penguins instead live in caves and crevices in the coastal lava.</p>
+    </div>
+    <div class="right-section">
+      <img src="https://d20knvk822eu5a.cloudfront.net/s3fs-public-optimized/2024-02/galc3a1pagos-penguin-galc3a1pagos-islands_0.jpg.webp">
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="section">
+    <h2>ABOUT GALAPAGOS PENGUIN</h2>
+    <p>
+   Galapagos penguins are among the smallest of all penguin species. They average about 53 cm (about 21 inches) in length and weigh from 1.7 to 2.6 kg (about 4–6 pounds), males being slightly larger than females. As in other members of the genus Spheniscus, plumage covering the chin and back is black, and most of the breast plumage is white. However, the C-shaped strips of white feathers on the sides of the head are much thinner than those present on African , Humboldt , and Magellanic  penguins. Juveniles, in contrast, have a gray head and back and white underside. They also possess white patches of feathers on their cheeks. The chicks are covered in a fluff of light gray downy feathers.
+    </p>
+  </div>
+  <!-- Info Button -->
+<center><button class="btn-info">SCIENTIFIC NAME:Spheniscus mendiculus</button></center><br><br>
+<CENTER><button class="btn-info">EXTINCTS SPECIES</button></CENTER>
+
+<style>
+  /* Info Button Styles */
+  .btn-info {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Info color */
+    color: #fff; /* Text color */
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  /* Hover Effect */
+  .btn-info:hover {
+    background-color: #2980b9; /* Darker shade of blue */
+    transform: scale(1.05);
+  }
+</style>
+
+  <!-- Gallery Section -->
+  <div class="section">
+    <center><h2>GALLERY</h2></center>
+    <div class="gallery">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ89vfd7R2Wj3tJPn-GptcxgWpeEBMKeZp3HQ&s" alt="Image 1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmqYXKaJOVBRjSzAmE0xphX3imvdBc7C-v0Q&s" alt="Image 2">
+      <img src="https://i.redd.it/iqn9b63lreld1.jpeg" alt="Image 3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE8RaYe9SQ7MjsOyKuE9TzpmUkmUmXVBufwg&s" alt="Image 4">
+    </div>
+  </div>
+
+  <!-- Where vaquita Are Found Section -->
+  <div class="section">
+    <h2>Where Vaquita Are Found</h2>
+    <p>
+     Mainly on Isabela and Fernandina islands, but also on Floreana, Santiago, and Bartolome 
+    </p>
+    <div class="map-container">
+      <img src="https://cdn.britannica.com/96/19796-004-1B7CAD97/Galapagos-Islands-Ecuador-World-Heritage-site-1978.jpg" alt="Hawksbill Turtle Habitat Map" style="width: 70%; margin-top: 20px;">
+    </div>
+    <p><strong>Did you know?</strong>Gentoo Penguins are the fastest of all penguin species!
+The oldest penguin fossils are 62 million years old.
+Penguins poop every 20 minutes. </p>
+  </div>
+
+</body>
+</html>

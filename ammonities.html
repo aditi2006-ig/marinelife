@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawksbill Turtle</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #003f7f, #000f2c);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Container Layout */
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      padding: 0 5%;
+    }
+
+    /* Left Section */
+    .left-section {
+      max-width: 45%;
+    }
+
+    .left-section h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .left-section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin: 20px 0;
+    }
+
+    .left-section span {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: #d1e8f2;
+    }
+
+    /* Right Section (Video Section) */
+    .right-section {
+      max-width: 70%;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .right-section iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* New Section Styles */
+    .section {
+      padding: 20px 5%;
+      margin: 20px 0;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #d1e8f2;
+    }
+
+    /* Gallery Styles */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .modal .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Ocean Waves Design */
+    .wave {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 43% 57% 70% 30% / 60% 30% 70% 40%;
+      animation: wave-animation 8s infinite ease-in-out;
+    }
+
+    /* Wave Positions */
+    .wave.top-left {
+      top: -50px;
+      left: -50px;
+    }
+
+    .wave.top-right {
+      top: -50px;
+      right: -50px;
+    }
+
+    .wave.bottom-left {
+      bottom: -50px;
+      left: -50px;
+    }
+
+    .wave.bottom-right {
+      bottom: -50px;
+      right: -50px;
+    }
+
+    /* Wave Animation */
+    @keyframes wave-animation {
+      0%, 100% {
+        transform: scale(1) rotate(0deg);
+      }
+      50% {
+        transform: scale(1.2) rotate(15deg);
+      }
+    }
+
+    /* Media Query for Smaller Screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right-section iframe {
+        height: 200px;
+      }
+
+      .wave {
+        width: 150px;
+        height: 150px;
+      }
+
+      .gallery img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    /* Map Container */
+    .map-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Ocean Waves -->
+  <div class="wave top-left"></div>
+  <div class="wave top-right"></div>
+  <div class="wave bottom-left"></div>
+  <div class="wave bottom-right"></div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="left-section">
+      <h1>AMMONITES</h1><br><br><br>
+     <p>Ammonites are an extinct group of marine mollusks that thrived during the Mesozoic Era, particularly from the Late Cambrian to the Cretaceous period. Characterized by their coiled and chambered shells, ammonites are closely related to modern cephalopods, such as squids and octopuses. These creatures played a significant role in ancient marine ecosystems, serving as both predators and prey. Fossils of ammonites are widely studied by paleontologists, as their distinct shell shapes and intricate suture patterns allow for precise dating of rock layers, providing valuable insights into the Earth's geological history and the evolution of life in the oceans..</p>
+    </div>
+    <div class="right-section">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu8Jtn0odhuYMVj8fKSC1wKYeOrEOhhbiurw&s">
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="section">
+    <h2>CAUSE OF DECLINE</h2>
+    <p>Ammonites declined primarily due to the mass extinction event at the end of the Cretaceous period, likely caused by a massive asteroid impact that led to drastic environmental changes, including climate shifts and disrupted food chains. Additionally, volcanic activity from the Deccan Traps contributed to further ecological stress through greenhouse gas emissions and ocean acidification. These factors collectively resulted in the extinction of ammonites and many other marine species.
+    </p>
+  </div>
+  <!-- Info Button -->
+<center><button class="btn-info">SCIENTIFIC NAME:Ammonoidea</button></center><br><br>
+<CENTER><button class="btn-info">EXTINCT SPECIES</button></CENTER>
+
+<style>
+  /* Info Button Styles */
+  .btn-info {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Info color */
+    color: #fff; /* Text color */
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  /* Hover Effect */
+  .btn-info:hover {
+    background-color: #2980b9; /* Darker shade of blue */
+    transform: scale(1.05);
+  }
+</style>
+
+  <!-- Gallery Section -->
+  <div class="section">
+    <center><h2>GALLERY</h2></center>
+    <div class="gallery">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjHzp_CKsy4NLm4N_zczxqba7qjU4mNAMo-A&s" alt="Image 1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZNeOm10RSkqntT15UQ3WH2P5RvV4dXphHqw&s" alt="Image 2">
+      <img src="https://fossillady.com/wp-content/uploads/2022/03/img_0428.jpg?w=1024" alt="Image 3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU7TQHV1TVm0Rz9mpEynAXMK4dL7ooq9r_SQ&s" alt="Image 4">
+    </div>
+  </div>
+
+  <!-- Where vaquita Are Found Section -->
+  <div class="section">
+    <h2>Where Ammonites Are Found</h2>
+    <p>
+     Ammonite fossils can be found all over the world, in many types of marine sedimentary rocks:
+Great Plains of North America
+Himalaya foothills
+Antarctica glaciers
+River valleys in north India, such as Spiti and Ladakh
+    </p>
+    <div class="map-container">
+      <img src="https://i.dailymail.co.uk/1s/2021/11/11/11/50349879-10190493-image-a-22_1636630131651.jpg" alt="Hawksbill Turtle Habitat Map" style="width: 70%; margin-top: 20px;">
+    </div>
+    <p><strong>Did you know?</strong>Ammonites were born with tiny shells and, as they grew, they built new chambers onto it. They would move their entire body into a new chamber and seal off their old and now too-small living quarters with walls known as septa.</p>
+  </div>
+
+</body>
+</html>

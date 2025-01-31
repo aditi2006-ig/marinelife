@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawksbill Turtle</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #003f7f, #000f2c);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Container Layout */
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      padding: 0 5%;
+    }
+
+    /* Left Section */
+    .left-section {
+      max-width: 45%;
+    }
+
+    .left-section h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .left-section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin: 20px 0;
+    }
+
+    .left-section span {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: #d1e8f2;
+    }
+
+    /* Right Section (Video Section) */
+    .right-section {
+      max-width: 50%;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .right-section iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* New Section Styles */
+    .section {
+      padding: 20px 5%;
+      margin: 20px 0;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #d1e8f2;
+    }
+
+    /* Gallery Styles */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .modal .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Ocean Waves Design */
+    .wave {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 43% 57% 70% 30% / 60% 30% 70% 40%;
+      animation: wave-animation 8s infinite ease-in-out;
+    }
+
+    /* Wave Positions */
+    .wave.top-left {
+      top: -50px;
+      left: -50px;
+    }
+
+    .wave.top-right {
+      top: -50px;
+      right: -50px;
+    }
+
+    .wave.bottom-left {
+      bottom: -50px;
+      left: -50px;
+    }
+
+    .wave.bottom-right {
+      bottom: -50px;
+      right: -50px;
+    }
+
+    /* Wave Animation */
+    @keyframes wave-animation {
+      0%, 100% {
+        transform: scale(1) rotate(0deg);
+      }
+      50% {
+        transform: scale(1.2) rotate(15deg);
+      }
+    }
+
+    /* Media Query for Smaller Screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right-section iframe {
+        height: 200px;
+      }
+
+      .wave {
+        width: 150px;
+        height: 150px;
+      }
+
+      .gallery img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    /* Map Container */
+    .map-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Ocean Waves -->
+  <div class="wave top-left"></div>
+  <div class="wave top-right"></div>
+  <div class="wave bottom-left"></div>
+  <div class="wave bottom-right"></div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="left-section">
+      <h1>WHALE SHARK</h1><br><br><br>
+     <p>Whale sharks (Rhincodon typus) are the largest shark, and indeed largest of any fishes alive today. They feed on plankton and travel large distances to find enough food to sustain their huge size, and to reproduce. Whale sharks are found in all the tropical oceans of the world. Their white spotted colouration makes these gentle giants easy to distinguish, and popular with snorkelers and divers at sites where they aggregate off the coast.
+The maximum size of whale sharks is not known, but could be as large as 60 feet. Females give birth to live young but this has never been observed.</p>
+    </div>
+    <div class="right-section">
+      <img src="https://i.pinimg.com/originals/a6/a0/1f/a6a01f77c4a0a4a541a08f88b1fb5038.jpg">
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="section">
+    <h2>ABOUT WHALE SHARK</h2>
+    <p>Plankton eaters
+The whale shark is the biggest fish and shark in the world. These gentle marine giants roam the oceans around the globe, generally alone. However, large numbers of whale sharks often gather in areas with abundant plankton food—making them prime tourist attractions .The distribution of whale sharks indicates the presence of plankton and the overall health of our oceans.
+ 
+    </p>
+  </div>
+  <!-- Info Button -->
+<center><button class="btn-info">SCIENTIFIC NAME: Rhincodon typus</button></center><br><br>
+<CENTER><button class="btn-info">ENDANGERED SPECIES</button></CENTER>
+
+<style>
+  /* Info Button Styles */
+  .btn-info {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Info color */
+    color: #fff; /* Text color */
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  /* Hover Effect */
+  .btn-info:hover {
+    background-color: #2980b9; /* Darker shade of blue */
+    transform: scale(1.05);
+  }
+</style>
+
+  <!-- Gallery Section -->
+  <div class="section">
+    <center><h2>GALLERY</h2></center>
+    <div class="gallery">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuYiclr02sZBtrRgd-D8L4NPnRSjxDyE1FVg&s" alt="Image 1">
+      <img src="https://www.joali.com/media/ctbf50zg/joali-being-whaleshark.png?format=webp&v=1715861575" alt="Image 2">
+      <img src="https://i.pinimg.com/originals/43/46/02/43460285b6fda057795bb3ff89e61f55.jpg" alt="Image 3">
+      <img src="https://i.pinimg.com/736x/e6/7a/49/e67a49eb0a39c586c9b2bdb59fc35943.jpg" alt="Image 4">
+    </div>
+  </div>
+
+  <!-- Where Hawksbill Turtles Are Found Section -->
+  <div class="section">
+    <h2>Where Whale shark Are Found</h2>
+    <p>The whale shark inhabits all tropical and warm-temperate seas. The fish is primarily pelagic, and can be found in both coastal and oceanic habitats. 
+         </p>
+    <div class="map-container">
+      <img src="https://www.madawhalesharks.org/wp-content/uploads/2022/05/schema6.jpg" alt="whale shark Habitat Map" style="width: 70%; margin-top: 20px;">
+    </div>
+    <p><strong>Did you know?</strong> Part of the shark family, whale sharks grow to 18 metres long and weigh up to 19 tonnes. They can dive more than a kilometre deep  </p>
+  </div>
+
+</body>
+</html>

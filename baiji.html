@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawksbill Turtle</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #003f7f, #000f2c);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Container Layout */
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      padding: 0 5%;
+    }
+
+    /* Left Section */
+    .left-section {
+      max-width: 45%;
+    }
+
+    .left-section h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .left-section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin: 20px 0;
+    }
+
+    .left-section span {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: #d1e8f2;
+    }
+
+    /* Right Section (Video Section) */
+    .right-section {
+      max-width: 55%;
+      height: 650px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .right-section iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* New Section Styles */
+    .section {
+      padding: 20px 5%;
+      margin: 20px 0;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #d1e8f2;
+    }
+
+    /* Gallery Styles */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .modal .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Ocean Waves Design */
+    .wave {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 43% 57% 70% 30% / 60% 30% 70% 40%;
+      animation: wave-animation 8s infinite ease-in-out;
+    }
+
+    /* Wave Positions */
+    .wave.top-left {
+      top: -50px;
+      left: -50px;
+    }
+
+    .wave.top-right {
+      top: -50px;
+      right: -50px;
+    }
+
+    .wave.bottom-left {
+      bottom: -50px;
+      left: -50px;
+    }
+
+    .wave.bottom-right {
+      bottom: -50px;
+      right: -50px;
+    }
+
+    /* Wave Animation */
+    @keyframes wave-animation {
+      0%, 100% {
+        transform: scale(1) rotate(0deg);
+      }
+      50% {
+        transform: scale(1.2) rotate(15deg);
+      }
+    }
+
+    /* Media Query for Smaller Screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right-section iframe {
+        height: 200px;
+      }
+
+      .wave {
+        width: 150px;
+        height: 150px;
+      }
+
+      .gallery img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    /* Map Container */
+    .map-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Ocean Waves -->
+  <div class="wave top-left"></div>
+  <div class="wave top-right"></div>
+  <div class="wave bottom-left"></div>
+  <div class="wave bottom-right"></div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="left-section">
+      <h1>BAIJI</h1><br><br><br>
+     <p> The baiji, or Yangtze river dolphin (Lipotes vexillifer), is a critically endangered freshwater cetacean native to the Yangtze River in China. Known for its distinctively long and narrow snout, the baiji was once a common sight in the river's waters, but its population has drastically declined due to habitat loss, pollution, and increased boat traffic. Despite extensive conservation efforts, the baiji is now believed to be functionally extinct, with the last confirmed sighting occurring in the early 2000s. This loss serves as a stark reminder of the fragility of aquatic ecosystems and the urgent need for effective conservation strategies to protect other endangered species.</p>
+    </div>
+    <div class="right-section">
+      <img src="https://i0.wp.com/www.lostspeciesday.org/wp-content/uploads/2017/07/theBaijiDolphin-copy.jpg?resize=778%2C742&ssl=1">
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="section">
+    <h2>BAIJI</h2>
+    <p>CAUSES OF DECLINE
+      The decline of the baiji, or Yangtze river dolphin, is primarily due to habitat loss from dam construction, pollution degrading water quality, and overfishing that reduces food availability. Increased boat traffic leads to collisions and noise pollution, further disrupting their environment. Climate change also impacts their habitat, contributing to the species' dramatic decline and functional extinction.</p>
+  </div>
+  <!-- Info Button -->
+<center><button class="btn-info">SCIENTIFIC NAME: Lipotes vexillifer </button></center><br><br>
+<CENTER><button class="btn-info">EXTINCT SPECIES</button></CENTER>
+
+<style>
+  /* Info Button Styles */
+  .btn-info {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Info color */
+    color: #fff; /* Text color */
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  /* Hover Effect */
+  .btn-info:hover {
+    background-color: #2980b9; /* Darker shade of blue */
+    transform: scale(1.05);
+  }
+</style>
+
+  <!-- Gallery Section -->
+  <div class="section">
+    <center><h2>GALLERY</h2></center>
+    <div class="gallery">
+      <img src="https://veganfirst.com/media/editorimages/E3F9Su2.jpg" alt="Image 1">
+      <img src="https://otlibrary.com/wp-content/gallery/baiji/Baiji-at-waters-surface-to-breathe-showing-blowhole.jpg" alt="Image 2">
+      <img src="https://sites.psu.edu/marabelleolivia/files/2020/09/fc352d7358327e1037db33bc1a4cea9b.jpg" alt="Image 3">
+      <img src="https://i.pinimg.com/736x/a6/c6/49/a6c6491086739f50ed74d43d50cc2ecc.jpg" alt="Image 4">
+    </div>
+  </div>
+
+  <!-- Where baiji Are Found Section -->
+  <div class="section">
+    <h2>Where Baiji Are Found</h2>
+    <p>
+    China's Yangtze River
+The baiji, Lipotes vexillifer, was a species of dolphin found exclusively in China's Yangtze River.
+    </p>
+    <div class="map-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Baiji_conservation_efforts_map.png" alt="Hawksbill Turtle Habitat Map" style="width: 70%; margin-top: 20px;">
+    </div>
+    <p><strong>Did you know?</strong>Baiji is a Chinese word meaning "a white dolphin." This species is one of the most endangered cetaceans in the world </p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawksbill Turtle</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #003f7f, #000f2c);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Container Layout */
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      padding: 0 5%;
+    }
+
+    /* Left Section */
+    .left-section {
+      max-width: 45%;
+    }
+
+    .left-section h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .left-section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin: 20px 0;
+    }
+
+    .left-section span {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: #d1e8f2;
+    }
+
+    /* Right Section (Video Section) */
+    .right-section {
+      max-width: 70%;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .right-section iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* New Section Styles */
+    .section {
+      padding: 20px 5%;
+      margin: 20px 0;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #d1e8f2;
+    }
+
+    /* Gallery Styles */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .modal .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Ocean Waves Design */
+    .wave {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 43% 57% 70% 30% / 60% 30% 70% 40%;
+      animation: wave-animation 8s infinite ease-in-out;
+    }
+
+    /* Wave Positions */
+    .wave.top-left {
+      top: -50px;
+      left: -50px;
+    }
+
+    .wave.top-right {
+      top: -50px;
+      right: -50px;
+    }
+
+    .wave.bottom-left {
+      bottom: -50px;
+      left: -50px;
+    }
+
+    .wave.bottom-right {
+      bottom: -50px;
+      right: -50px;
+    }
+
+    /* Wave Animation */
+    @keyframes wave-animation {
+      0%, 100% {
+        transform: scale(1) rotate(0deg);
+      }
+      50% {
+        transform: scale(1.2) rotate(15deg);
+      }
+    }
+
+    /* Media Query for Smaller Screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right-section iframe {
+        height: 200px;
+      }
+
+      .wave {
+        width: 150px;
+        height: 150px;
+      }
+
+      .gallery img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    /* Map Container */
+    .map-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Ocean Waves -->
+  <div class="wave top-left"></div>
+  <div class="wave top-right"></div>
+  <div class="wave bottom-left"></div>
+  <div class="wave bottom-right"></div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="left-section">
+      <h1>CARIBBEAN MONK SEAL</h1><br><br><br>
+     <p>The Caribbean monk seal (Neomonachus tropicalis) was a robust seal species native to the Caribbean Sea and Gulf of Mexico, characterized by its stout body, short snout, and dark brown to grayish fur. Adults typically weighed between 400 and 600 pounds and measured about 7 to 8 feet in length, often found resting on sandy beaches or rocky shores. Unfortunately, human activities such as hunting and habitat destruction led to a significant decline in their population, resulting in their extinction by 2008. The loss of the Caribbean monk seal serves as a poignant reminder of the urgent need for conservation efforts to protect marine ecosystems and the diverse species that inhabit them.</p>
+    </div>
+    <div class="right-section">
+      <img src="https://www.extinctanimals.org/wp-content/uploads/2015/04/Caribbean-Monk-Seal-Images.jpg">
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="section">
+    <h2>CAUSE OF DECLINE</h2>
+    <p>The decline of the Caribbean monk seal was primarily due to human activities. Overhunting for their blubber and skin in the 18th and 19th centuries severely reduced their population. Additionally, habitat destruction from coastal development, pollution, and fishing activities further impacted their breeding and foraging grounds. Competition with other marine species for food, coupled with the effects of climate change, exacerbated their vulnerability. These combined factors ultimately led to their extinction by 2008, highlighting the critical need for sustainable practices to protect marine life.
+
+     </p>
+  </div>
+  <!-- Info Button -->
+<center><button class="btn-info">SCIENTIFIC NAME:Monachus tropicalis</button></center><br><br>
+<CENTER><button class="btn-info">ENDANGERED SPECIES</button></CENTER>
+
+<style>
+  /* Info Button Styles */
+  .btn-info {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Info color */
+    color: #fff; /* Text color */
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  /* Hover Effect */
+  .btn-info:hover {
+    background-color: #2980b9; /* Darker shade of blue */
+    transform: scale(1.05);
+  }
+</style>
+
+  <!-- Gallery Section -->
+  <div class="section">
+    <center><h2>GALLERY</h2></center>
+    <div class="gallery">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDQOr4ppxLZ88QtVbd0Ap2fyM-991tB8TAhA&s" alt="Image 1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZTwVftny4wTHkHpS6tQGIb_Nk_4cqrEhb_Q&s" alt="Image 2">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjNfBViRwhTMH_PE8_JgKfuEaqoBkjfh1fEw&s" alt="Image 3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Yfh1rfNMV1zPCBJisYwX7GvV4_GpPwNevg&s" alt="Image 4">
+    </div>
+  </div>
+
+  <!-- Where vaquita Are Found Section -->
+  <div class="section">
+    <h2>Where Caribbean Monk Seal Are Found</h2>
+    <p>
+     Caribbean monk seals were found in warm temperate, subtropical and tropical waters of the Caribbean Sea, Gulf of Mexico, and the West Atlantic Ocean. 
+    </p>
+    <div class="map-container">
+      <img src="https://www.researchgate.net/publication/313684364/figure/fig2/AS:649670074318849@1531904824367/Historical-range-and-current-distribution-of-Mediterranean-monk-seal-Johnson-et-al.png" alt="Hawksbill Turtle Habitat Map" style="width: 70%; margin-top: 20px;">
+    </div>
+    <p><strong>Did you know?</strong>Caribbean monk seals are the only pinniped species to be extinct</p>
+  </div>
+
+</body>
+</html>
