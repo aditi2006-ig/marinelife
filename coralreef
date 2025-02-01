@@ -61,14 +61,23 @@ margin-left:50px;
 
   <div class="content">
     <div class="text">
-      <h1>Mangrove Forest</h1>
-      <p>Mangrove forests are coastal ecosystems found in tropical and subtropical regions, characterized by salt-tolerant trees and shrubs that thrive in brackish water where freshwater meets the ocean. These unique forests are well adapted to the harsh, waterlogged conditions with specialized root systems like aerial roots and pneumatophores that help them breathe in oxygen-poor soils. Mangroves provide crucial ecological services, acting as natural barriers against coastal erosion, storm surges, and rising sea levels while fostering rich biodiversity.
-              </p>
-     
+          <h1>Coral Reef </h1>
+
+      <p>Coral reefs are diverse underwater ecosystems built by colonies of tiny marine animals called corals, which secrete calcium carbonate to form hard, rocky structures. These reefs are often referred to as the "rainforests of the sea" due to their incredible biodiversity, supporting thousands of species of fish, invertebrates, and marine plants. Coral reefs thrive in warm, shallow waters and are vital for coastal protection, as they buffer against waves, storms, and erosion. They also provide critical habitats and resources for both marine and human life. However, coral reefs are under threat from climate change, ocean acidification, pollution, and overfishing, making their conservation essential for marine health.
+
+           </p>
+
+    </div>
+
+
+
     <!-- Video on the right side -->
+
  <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/cwTZhyA57mA?si=f7t4KdSOfa_Jtxc3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
-  </div>
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZiULxLLP32s?si=Mm3MQwzmqe-BySNX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
 
 </body>
 </html>
