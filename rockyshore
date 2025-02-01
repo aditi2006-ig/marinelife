@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('https://images.unsplash.com/photo-1618288389681-f135edea12db?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with a kelp forest image URL */
+      background-image: url('https://cdn.pixabay.com/photo/2016/11/19/11/32/sea-1838763_1280.jpg'); /* Replace with a kelp forest image URL */
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
@@ -61,13 +61,20 @@ margin-left:50px;
 
   <div class="content">
     <div class="text">
-      <h1>Mangrove Forest</h1>
-      <p>Mangrove forests are coastal ecosystems found in tropical and subtropical regions, characterized by salt-tolerant trees and shrubs that thrive in brackish water where freshwater meets the ocean. These unique forests are well adapted to the harsh, waterlogged conditions with specialized root systems like aerial roots and pneumatophores that help them breathe in oxygen-poor soils. Mangroves provide crucial ecological services, acting as natural barriers against coastal erosion, storm surges, and rising sea levels while fostering rich biodiversity.
-              </p>
-     
+     <h1>Rocky Shore </h1>
+      <p>
+        Rocky shores are coastal areas where solid rock formations meet the ocean, creating a dynamic and challenging environment for marine life. These shores are shaped by constant waves, tides, and weathering, leading to the formation of tide pools, crevices, and cliffs. The intertidal zone, where the land meets the sea, is divided into different sections based on water exposure, influencing the types of organisms that can survive there.
+
+
+</p>
+      <p>
+         Rocky shores play an essential role in coastal ecosystems by providing breeding grounds and shelter for marine organisms. They also act as natural barriers, protecting coastlines from erosion. However, human activities such as pollution, overfishing, and climate change threaten these habitats, making conservation efforts crucial to preserving their biodiversity.
+  </p>
+          </div>
+
     <!-- Video on the right side -->
  <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/cwTZhyA57mA?si=f7t4KdSOfa_Jtxc3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/r9XSq8y26-I?si=07qtZs-gpJkf3Zqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
   </div>
 
 </body>
