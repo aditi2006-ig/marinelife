@@ -61,13 +61,13 @@ margin-left:50px;
 
   <div class="content">
     <div class="text">
-      <h1>Mangrove Forest</h1>
-      <p>Mangrove forests are coastal ecosystems found in tropical and subtropical regions, characterized by salt-tolerant trees and shrubs that thrive in brackish water where freshwater meets the ocean. These unique forests are well adapted to the harsh, waterlogged conditions with specialized root systems like aerial roots and pneumatophores that help them breathe in oxygen-poor soils. Mangroves provide crucial ecological services, acting as natural barriers against coastal erosion, storm surges, and rising sea levels while fostering rich biodiversity.
-              </p>
+      <h1>Kelp Forests</h1>
+      <p>Kelp forests are underwater ecosystems dominated by large, fast-growing seaweeds called kelp, which thrive in nutrient-rich, cold coastal waters. These forests provide critical habitats for a variety of marine species, including fish, invertebrates, and marine mammals. Kelp can grow up to 2 feet per day, forming dense underwater forests that provide food, shelter, and breeding grounds for numerous species.Kelp forests are important for coastal protection, as they help absorb wave energy, reducing erosion and protecting shorelines. They also play a role in carbon sequestration, as kelp absorbs carbon dioxide during photosynthesis. However, kelp forests are vulnerable to threats such as climate change, pollution, and overfishing, making their conservation crucial for maintaining marine biodiversity and ecosystem services.
+            </p>
      
     <!-- Video on the right side -->
  <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/cwTZhyA57mA?si=f7t4KdSOfa_Jtxc3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+      <iframe width="560" height="315" src="https:https://www.youtube.com/embed/kzHJSJHAJ0c?si=TFF1asEu3aqwlce4autoplay=1&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
   </div>
 
 </body>
